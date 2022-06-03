@@ -5,7 +5,10 @@
   while (true) {
     var password = Number(prompt("Şifrenizi giriniz: "));
     var password2 = Number(prompt("Şifrenizi tekrar giriniz: "));
-    if (password==password2) {
+    if(password== " " || password2==" "){
+      alert("Şifrelerde boş değer girilemez.")
+    }
+    if (password==password2 && (password!= " " || password2!= " ")) {
       break;
     }
     alert("Şifreler eşleşemedi. İki şifreyi de tekrar giriniz.")
